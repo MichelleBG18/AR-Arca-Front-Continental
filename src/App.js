@@ -22,6 +22,8 @@ import MaterialSymbolscameraEnhanc from "./pages/MaterialSymbolscameraEnhanc";
 import MaterialSymbolscameraEnhanc1 from "./pages/MaterialSymbolscameraEnhanc1";
 import { useEffect } from "react";
 
+// hola
+
 function App() {
   const action = useNavigationType();
   const location = useLocation();
