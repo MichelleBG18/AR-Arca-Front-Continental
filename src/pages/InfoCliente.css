@@ -1,0 +1,282 @@
+.arca-continental-logo-4-icon3 {
+  position: absolute;
+  top: 14px;
+  left: 16px;
+  width: 63px;
+  height: 39px;
+  object-fit: cover;
+}
+.informacin-del-cliente {
+  position: absolute;
+  top: 68px;
+  left: 16px;
+  font-size: var(--font-size-5xl);
+}
+.info-cliente-child {
+  position: absolute;
+  top: 104.5px;
+  left: 15.5px;
+  border-top: 1px solid var(--color-darkgray-200);
+  box-sizing: border-box;
+  width: 359px;
+  height: 1px;
+}
+.group-child33 {
+  position: absolute;
+  top: -16px;
+  left: -17px;
+  width: 390px;
+  height: 110px;
+}
+.abarrotes-la-central7 {
+  margin: 0;
+}
+.abarrotes-la-central-container1 {
+  position: absolute;
+  top: 26px;
+  left: 106px;
+  display: inline-block;
+  width: 223px;
+  height: 19px;
+}
+.clip-path-group22,
+.vector-group {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 358px;
+  height: 70px;
+}
+.clip-path-group22 {
+  height: 100%;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.l7 {
+  position: absolute;
+  height: 40.38%;
+  width: 37.04%;
+  top: 30.77%;
+  left: 31.48%;
+  display: flex;
+  align-items: center;
+}
+.jade-sky-blue22 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+.a-black-jade-sky-blue22 {
+  position: absolute;
+  top: 9px;
+  left: 23px;
+  border-radius: var(--br-981xl);
+  background-color: var(--color-white);
+  width: 54px;
+  height: 52px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-11xl);
+}
+.nombre-cliente {
+  position: absolute;
+  top: 120px;
+  left: 17px;
+  width: 358px;
+  height: 70px;
+  text-align: center;
+}
+.navbar-icon7 {
+  position: absolute;
+  top: 748px;
+  left: 0;
+  width: 390px;
+  height: 96px;
+}
+.box4 {
+  border-radius: var(--br-13xl);
+  background-color: var(--color-firebrick);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.box4,
+.navbar4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 202px;
+  height: 35px;
+}
+.guardar,
+.navbar-parent1 {
+  position: absolute;
+  top: 5px;
+  left: 59px;
+}
+.navbar-parent1 {
+  top: 616px;
+  left: 95px;
+  width: 202px;
+  height: 35px;
+  color: var(--color-white);
+}
+.actualizar-datos1 {
+  position: absolute;
+  top: 0;
+  left: 53px;
+  font-size: var(--font-size-xl);
+  color: var(--color-firebrick);
+  text-align: center;
+}
+.act-dueo-child {
+  position: absolute;
+  top: 17px;
+  left: 0;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-gainsboro-100);
+  width: 320px;
+  height: 32px;
+}
+.edit-2-icon {
+  position: absolute;
+  top: 0;
+  left: 282px;
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+}
+.lucia-valleverde-guzmn {
+  position: absolute;
+  top: 1px;
+  left: 0;
+}
+.log-in-usuario12 {
+  position: absolute;
+  top: 25px;
+  left: 11px;
+  width: 299px;
+  height: 17px;
+  color: var(--color-gray-400);
+}
+.act-dueo {
+  position: absolute;
+  top: 41px;
+  left: 0;
+  width: 320px;
+  height: 49px;
+}
+.nmero-de-contacto {
+  position: absolute;
+  top: 0;
+  left: 5px;
+}
+.act-correo,
+.act-direccion,
+.act-numero-contacto {
+  position: absolute;
+  top: 107px;
+  left: 4px;
+  width: 320px;
+  height: 49px;
+}
+.act-correo,
+.act-direccion {
+  top: 173px;
+  left: 2px;
+}
+.act-direccion {
+  top: 239px;
+  left: 6px;
+}
+.comprobante-de-domicilio {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.act-comprobante-domicilio,
+.upload-icon {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 164px;
+  height: 15px;
+}
+.upload-icon {
+  top: 0;
+  left: 175px;
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+}
+.act-comprobante-fiscal {
+  position: absolute;
+  top: 310px;
+  left: 9px;
+  width: 192px;
+  height: 17px;
+}
+.act-comprobante-domicilio1 {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 123px;
+  height: 15px;
+}
+.act-ine,
+.upload-icon1 {
+  position: absolute;
+  height: 17px;
+}
+.upload-icon1 {
+  top: 0;
+  left: 137px;
+  width: 17px;
+  overflow: hidden;
+}
+.act-ine {
+  top: 354px;
+  left: 9px;
+  width: 154px;
+}
+.actualizar-datos,
+.actualizar-datos-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 326px;
+  height: 371px;
+}
+.actualizar-datos {
+  top: 210px;
+  left: 35px;
+  font-size: var(--font-size-xs);
+  color: var(--color-black);
+}
+.arrow-left-circle-icon2 {
+  position: absolute;
+  top: 678px;
+  left: 183px;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.info-cliente {
+  position: relative;
+  background-color: var(--color-snow);
+  width: 100%;
+  height: 844px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--texts);
+  font-family: var(--font-montserrat);
+}

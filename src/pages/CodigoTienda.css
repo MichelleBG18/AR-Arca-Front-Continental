@@ -1,0 +1,51 @@
+.mask-group-icon,
+.navbar-icon3 {
+  position: absolute;
+  top: 748px;
+  left: 0;
+  width: 390px;
+  height: 96px;
+}
+.mask-group-icon {
+  top: 67px;
+  height: 722px;
+  object-fit: cover;
+}
+.exclude-child {
+  position: absolute;
+  top: 68px;
+  left: -24px;
+  background-color: #d9d9d9;
+  width: 390px;
+  height: 680px;
+}
+.exclude-item {
+  position: absolute;
+  top: 334px;
+  left: 52px;
+  border-radius: 8px;
+  background-color: var(--color-white);
+  width: 238px;
+  height: 178px;
+}
+.exclude {
+  position: relative;
+  background-color: rgba(128, 128, 128, 0.5);
+  width: 390px;
+  height: 680px;
+}
+.arca-continental-logo-3-icon {
+  position: absolute;
+  top: 14px;
+  left: 13px;
+  width: 63px;
+  height: 39px;
+  object-fit: cover;
+}
+.codigo-tienda {
+  position: relative;
+  background-color: var(--color-snow);
+  width: 100%;
+  height: 844px;
+  overflow: hidden;
+}

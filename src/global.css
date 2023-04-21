@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Limelight:wght@400&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-montserrat: Montserrat;
+  --font-limelight: Limelight;
+
+  /* font sizes */
+  --font-size-5xl: 24px;
+  --font-size-3xs: 10px;
+  --font-size-base: 16px;
+  --font-size-sm: 14px;
+  --font-size-xl: 20px;
+  --font-size-xs: 12px;
+  --font-size-mini: 15px;
+  --font-size-2xs: 11px;
+  --font-size-8xs: 5px;
+  --font-size-4xl: 23px;
+  --font-size-smi: 13px;
+  --font-size-11xl: 30px;
+
+  /* Colors */
+  --color-snow: #fff9f5;
+  --color-white: #fff;
+  --texts: #393939;
+  --color-darkslategray-100: #383838;
+  --color-green: #13790a;
+  --color-firebrick: #b81631;
+  --color-darkgray-100: #999;
+  --color-darkgray-200: rgba(171, 171, 171, 0.2);
+  --color-gray-100: #8c8c8c;
+  --color-gray-200: #2c2c2c;
+  --color-gray-300: rgba(255, 255, 255, 0.9);
+  --color-gray-400: rgba(0, 0, 0, 0.2);
+  --color-gainsboro-100: rgba(233, 228, 228, 0.72);
+  --color-maroon: #6c1d18;
+  --color-black: #000;
+  --color-aquamarine: #20e2a5;
+
+  /* border radiuses */
+  --br-981xl: 1000px;
+  --br-8xs: 5px;
+  --br-13xl: 32px;
+  --br-3xs: 10px;
+  --br-11xl: 30px;
+  --br-12xl: 31px;
+  --br-xl: 20px;
+}

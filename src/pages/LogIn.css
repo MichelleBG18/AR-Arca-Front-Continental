@@ -1,0 +1,125 @@
+.logo-arca-icon1 {
+  position: absolute;
+  top: 84px;
+  left: 99px;
+  width: 192px;
+  height: 132px;
+  object-fit: cover;
+}
+.contrasea {
+  position: absolute;
+  top: 0;
+  left: 5px;
+}
+.log-in-contrasea-child {
+  position: absolute;
+  top: 17px;
+  left: 0;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-gainsboro-100);
+  width: 320px;
+  height: 32px;
+}
+.escribe-tu-contrasea {
+  position: absolute;
+  top: 25px;
+  left: 8px;
+  color: var(--color-gray-400);
+}
+.log-in-contrasea {
+  position: absolute;
+  top: 136px;
+  left: 0;
+  width: 320px;
+  height: 49px;
+}
+.escribe-tu-nombre {
+  position: absolute;
+  top: 25px;
+  left: 8px;
+}
+.log-in-usuario,
+.nombre-de-usuario {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  color: var(--texts);
+}
+.log-in-usuario {
+  top: 61px;
+  left: 0;
+  width: 320px;
+  height: 49px;
+  color: var(--color-gray-400);
+}
+.iniciar-session {
+  position: absolute;
+  top: 0;
+  left: 71px;
+  font-size: var(--font-size-xl);
+  color: var(--color-firebrick);
+}
+.log-in1 {
+  position: absolute;
+  top: 323px;
+  left: 35px;
+  width: 320px;
+  height: 185px;
+  color: var(--texts);
+}
+.olvid-mi-contrasea {
+  position: absolute;
+  top: 656px;
+  left: 124px;
+  font-size: 6px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.box {
+  border-radius: var(--br-13xl);
+  background-color: var(--color-firebrick);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.box,
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 137px;
+  height: 35px;
+}
+.boton,
+.entrar {
+  position: absolute;
+  top: 6px;
+  left: 38px;
+}
+.boton {
+  top: 590px;
+  left: 126px;
+  width: 137px;
+  height: 35px;
+  cursor: pointer;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+}
+.registrate {
+  text-decoration: underline;
+}
+.nuevo-usuario-registrate-container {
+  position: absolute;
+  top: 636px;
+  left: 115px;
+  cursor: pointer;
+}
+.log-in {
+  position: relative;
+  background-color: var(--color-snow);
+  width: 100%;
+  height: 844px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--color-firebrick);
+  font-family: var(--font-montserrat);
+}

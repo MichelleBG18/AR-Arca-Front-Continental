@@ -1,0 +1,365 @@
+.arca-continental-logo-4-icon {
+  position: absolute;
+  top: 14px;
+  left: 13px;
+  width: 63px;
+  height: 39px;
+  object-fit: cover;
+}
+.navbar-icon {
+  position: absolute;
+  top: 748px;
+  left: 0;
+  width: 390px;
+  height: 96px;
+}
+.jueves-9-de {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--texts);
+}
+.group-child,
+.group-item {
+  position: absolute;
+  top: 36.5px;
+  box-sizing: border-box;
+}
+.group-child {
+  left: -0.5px;
+  border-top: 1px solid var(--color-darkgray-200);
+  width: 359px;
+  height: 1px;
+}
+.group-item {
+  left: 273.5px;
+  border-right: 1px solid var(--color-darkgray-200);
+  width: 1px;
+  height: 328px;
+}
+.aprobada {
+  position: absolute;
+  top: 12px;
+  left: 286px;
+  display: flex;
+  color: var(--color-green);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  height: 29px;
+}
+.group-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-8xs);
+  background-color: var(--color-white);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 64px;
+  height: 64px;
+}
+.clip-path-group {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.l {
+  position: absolute;
+  height: 38.64%;
+  width: 36.36%;
+  top: 31.82%;
+  left: 31.82%;
+  display: flex;
+  align-items: center;
+}
+.jade-sky-blue {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+.a-black-jade-sky-blue {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: var(--br-981xl);
+  background-color: var(--color-white);
+  width: 44px;
+  height: 44px;
+  overflow: hidden;
+}
+.rectangle-parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 64px;
+  height: 64px;
+  font-size: var(--font-size-5xl);
+  color: var(--texts);
+}
+.abarrotes-la-central {
+  position: absolute;
+  top: 16px;
+  left: 89px;
+  font-size: var(--font-size-base);
+  font-weight: 600;
+}
+.desarrollador-david-beltrn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 300;
+}
+.aprobada-parent,
+.desarrollador-david-beltrn-wrapper {
+  position: absolute;
+  top: 36px;
+  left: 89px;
+  width: 139px;
+  height: 12px;
+  font-size: var(--font-size-3xs);
+}
+.aprobada-parent {
+  top: 52px;
+  left: 0;
+  width: 361px;
+  height: 64px;
+  font-size: var(--font-size-sm);
+}
+.n,
+.pendiente {
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+.pendiente {
+  top: 9px;
+  left: 286px;
+  color: var(--color-firebrick);
+  text-align: center;
+  justify-content: center;
+  width: 78px;
+  height: 29px;
+}
+.n {
+  height: 40.91%;
+  width: 43.18%;
+  top: 29.55%;
+  left: 27.27%;
+}
+.pendiente-parent {
+  position: absolute;
+  top: 131px;
+  left: 0;
+  width: 364px;
+  height: 64px;
+  font-size: var(--font-size-sm);
+}
+.m {
+  position: absolute;
+  height: 40.91%;
+  width: 52.27%;
+  top: 29.55%;
+  left: 22.73%;
+  display: flex;
+  align-items: center;
+}
+.aprobada1,
+.group-wrapper,
+.rectangle-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 64px;
+  height: 64px;
+}
+.rectangle-container {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.aprobada1,
+.group-wrapper {
+  color: var(--texts);
+}
+.aprobada1 {
+  top: 9px;
+  left: 286px;
+  font-size: var(--font-size-sm);
+  display: flex;
+  color: var(--color-green);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  height: 29px;
+}
+.desarrollador-maruca-cant-wrapper {
+  position: absolute;
+  top: 36px;
+  left: 89px;
+  width: 142px;
+  height: 12px;
+  font-size: var(--font-size-3xs);
+}
+.group-parent {
+  position: absolute;
+  top: 210px;
+  left: 0;
+  width: 361px;
+  height: 64px;
+}
+.jueves-9-de-marzo-parent {
+  position: absolute;
+  top: 86px;
+  left: 16px;
+  width: 364px;
+  height: 364px;
+  font-size: var(--font-size-5xl);
+}
+.pendiente1,
+.pendiente2 {
+  position: absolute;
+  top: 687px;
+  left: 302px;
+  display: flex;
+  color: var(--color-firebrick);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 78px;
+  height: 29px;
+}
+.pendiente2 {
+  top: 527px;
+}
+.group-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 64px;
+  height: 64px;
+  color: var(--texts);
+}
+.group-container,
+.pendiente3 {
+  position: absolute;
+  top: 52px;
+  left: 0;
+  width: 258px;
+  height: 64px;
+}
+.pendiente3 {
+  top: 13px;
+  left: 288px;
+  font-size: var(--font-size-sm);
+  display: flex;
+  color: var(--color-firebrick);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 78px;
+  height: 29px;
+}
+.group-parent1,
+.group-parent2 {
+  position: absolute;
+  top: 131px;
+  left: 0;
+  width: 366px;
+  height: 64px;
+}
+.group-parent2 {
+  top: 210px;
+  width: 256px;
+}
+.viernes-10-de-marzo-parent {
+  position: absolute;
+  top: 464px;
+  left: 14px;
+  width: 366px;
+  height: 364px;
+  font-size: var(--font-size-5xl);
+}
+.aprobada2 {
+  position: absolute;
+  top: 0;
+  left: 197px;
+  display: flex;
+  color: var(--color-green);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  height: 29px;
+}
+.abarrote-montesurri2 {
+  position: absolute;
+  top: 7px;
+  left: 0;
+  font-size: var(--font-size-base);
+  font-weight: 600;
+}
+.desarrollador-david-beltrn-wrapper1 {
+  position: absolute;
+  top: 27px;
+  left: 0;
+  width: 139px;
+  height: 12px;
+  font-size: var(--font-size-3xs);
+}
+.aprobada-group,
+.j {
+  position: absolute;
+  top: 5px;
+  left: 89px;
+  width: 272px;
+  height: 39px;
+}
+.j {
+  height: 40.91%;
+  width: 27.27%;
+  top: 29.55%;
+  left: 36.36%;
+  display: flex;
+  align-items: center;
+}
+.group-wrapper1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 64px;
+  height: 64px;
+  font-size: var(--font-size-5xl);
+  color: var(--texts);
+}
+.group-parent3 {
+  position: absolute;
+  top: 379px;
+  left: 16px;
+  width: 361px;
+  height: 64px;
+}
+.agenda-admin {
+  position: relative;
+  background-color: var(--color-snow);
+  width: 100%;
+  height: 844px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-darkslategray-100);
+  font-family: var(--font-montserrat);
+}

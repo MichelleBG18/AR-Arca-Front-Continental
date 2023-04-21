@@ -1,0 +1,152 @@
+.arca-continental-logo-1-icon1 {
+  position: absolute;
+  top: 18px;
+  left: 15px;
+  width: 63px;
+  height: 39px;
+  object-fit: cover;
+}
+.restablecer-datos-de-privacida-container1 {
+  position: absolute;
+  top: 103px;
+  left: 78px;
+  font-size: var(--font-size-xl);
+  font-weight: 800;
+  text-align: center;
+}
+.mdipassword-reset-icon1 {
+  position: absolute;
+  top: 168px;
+  left: 146px;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+.log-in-usuario-inner {
+  position: absolute;
+  top: 17px;
+  left: 0;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-gainsboro-100);
+  width: 320px;
+  height: 32px;
+}
+.escribe-tu-nombre1,
+.log-in-usuario2 {
+  position: absolute;
+  top: 25px;
+  left: 8px;
+}
+.log-in-usuario2 {
+  top: 392px;
+  left: 35px;
+  width: 320px;
+  height: 49px;
+  color: var(--color-gray-400);
+}
+.el-nombre-de {
+  margin: 0;
+}
+.el-nombre-de-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 307px;
+}
+.el-nombre-de-usuario-se-establ-wrapper {
+  position: absolute;
+  top: 445px;
+  left: 42px;
+  width: 307px;
+  height: 12px;
+  text-align: right;
+  font-size: var(--font-size-8xs);
+}
+.log-in-usuario3 {
+  position: absolute;
+  top: 463px;
+  left: 36px;
+  width: 320px;
+  height: 49px;
+  color: var(--color-gray-400);
+}
+.se-requiere-que-la-contrasea-wrapper {
+  position: absolute;
+  top: 516px;
+  left: 43px;
+  width: 307px;
+  height: 12px;
+  text-align: right;
+  font-size: var(--font-size-8xs);
+}
+.confirmar-contrasea,
+.log-in-usuario4 {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  color: var(--texts);
+}
+.log-in-usuario4 {
+  top: 540px;
+  left: 36px;
+  width: 320px;
+  height: 49px;
+  color: var(--color-gray-400);
+}
+.las-contraseas-deben-coincidi-wrapper {
+  position: absolute;
+  top: 593px;
+  left: 43px;
+  width: 307px;
+  height: 6px;
+  text-align: right;
+  font-size: var(--font-size-8xs);
+}
+.box2 {
+  border-radius: var(--br-13xl);
+  background-color: var(--color-firebrick);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.box2,
+.navbar2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 202px;
+  height: 35px;
+}
+.ingresar,
+.navbar-group {
+  position: absolute;
+  top: 5px;
+  left: 59px;
+}
+.navbar-group {
+  top: 649px;
+  left: 94px;
+  width: 202px;
+  height: 35px;
+  cursor: pointer;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+}
+.restablezca-su-nombre-container {
+  position: absolute;
+  top: 285px;
+  left: 30px;
+  font-size: var(--font-size-2xs);
+  color: var(--color-maroon);
+  text-align: center;
+}
+.ab-olvide-contrasea-2 {
+  position: relative;
+  background-color: var(--color-snow);
+  width: 100%;
+  height: 844px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--color-firebrick);
+  font-family: var(--font-montserrat);
+}
