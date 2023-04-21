@@ -24,7 +24,10 @@
   position: absolute;
   top: 25px;
   left: 8px;
-  color: var(--color-gray-400);
+  color: black;
+  background-color: var(--color-gainsboro-100);
+  padding: 0px;
+  border-color: var(--color-gainsboro-100);
 }
 .log-in-contrasea {
   position: absolute;
