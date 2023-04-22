@@ -123,11 +123,16 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<LogIn />} />
-      <Route path="/Hola" element={<AAOlvideContrasea />} />
-      <Route path="/Hola2" element={<ABOlvideContrasea2 />} />
-      <Route path="/2-log-in" element={<LogIn />} />
-      <Route path="/2aa-olvide-contrasea" element={<AAOlvideContrasea />} />
-      <Route path="/2ab-olvide-contrasea-2" element={<ABOlvideContrasea2 />} />
+      <Route path="/landingdesa" element={ <LandingPageHomeDesarrolla /> } />
+      <Route path="/landingadmin" element={ <LandingPageHomeAdmin /> } />
+      <Route path="/agenda" element={ <Agenda /> } />
+      <Route path="/agendaadmin" element={ <AgendaAdmin/> } />
+      <Route path="/codigo" element={ <CodigoTienda /> } />
+      <Route path="/registrarnuevo" element={< BRegistarNuevoUsuario />} />
+      <Route path="/olvidecontra" element={<AAOlvideContrasea />} />
+      <Route path="/restablecer" element={<ABOlvideContrasea2 />} />
+      <Route path="/perfil" element={<PerfilDelCliente/>} />
+      <Route path="/infocliente" element={ <InfoCliente/> } />
       <Route
         path="/2b-registar-nuevo-usuario"
         element={<BRegistarNuevoUsuario />}

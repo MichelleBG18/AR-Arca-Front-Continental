@@ -24,7 +24,10 @@
   position: absolute;
   top: 25px;
   left: 8px;
-  color: var(--color-gray-400);
+  color: black;
+  background-color: var(--color-gainsboro-100);
+  padding: 0px;
+  border-color: var(--color-gainsboro-100);
 }
 .log-in-contrasea {
   position: absolute;
@@ -122,4 +125,9 @@
   font-size: var(--font-size-xs);
   color: var(--color-firebrick);
   font-family: var(--font-montserrat);
+}
+
+.Link {
+  text-decoration: none; /*quita el subrayado*/
+  color: white; /*cambia el color del texto a blanco*/
 }
