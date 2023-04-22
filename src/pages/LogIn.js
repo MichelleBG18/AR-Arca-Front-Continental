@@ -26,21 +26,26 @@ const LogIn = () => {
       mode: 'cors',
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ "email": email, "clientPassword": clientPassword })
-    })  
-      .then((response) => response.json()).then((response)=> console.log(response))
-      .then((data) => {
-        console.log(data)
-        if (data.success) {
-            // If login was successful, navigate to another page
-            console.log("HOLA")
-            // window.location.href = "/Hola";
-          } else {
-            // Handle unsuccessful login (e.g. display error message)
-          }
-        })
-        .catch((error) => {
-          console.error("Error logging in: ", error);
-        });
+    })
+    .then((response) => console.log(response))  
+    .then((response) => {
+      if (response.status === 404 || response.status === 401) {
+        throw new Error("Network response was not ok");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      console.log("Data recibida desde back: ", data.success)
+      if (data.success) {
+        // If login was successful, navigate to another page
+        // window.location.href = "/Hola";
+      } else {
+        // Handle unsuccessful login (e.g. display error message)
+      }
+    })
+    .catch((error) => {
+      console.error("Error logging in: ", error);
+    });
   };
 
   const navigate = useNavigate();
