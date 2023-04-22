@@ -1,5 +1,5 @@
 import { useCallback, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import "./LogIn.css";
 const LogIn = () => {
 
@@ -32,6 +32,7 @@ const LogIn = () => {
         console.log(data)
         if (data.success) {
             // If login was successful, navigate to another page
+            
             console.log("HOLA")
             // window.location.href = "/Hola";
           } else {
@@ -44,7 +45,6 @@ const LogIn = () => {
   };
 
   const navigate = useNavigate();
-
 
   return (
     <div className="log-in">
@@ -72,14 +72,17 @@ const LogIn = () => {
         <div className="navbar">
           <div className="box" />
         </div>
-        <div className="entrar">Entrar</div>
+        <div className="entrar">
+          {/* Entrar */}
+          <Link to="/landingadmin" className = "Link">Entrar</Link>
+        </div>
       </div>
       <div
         className="nuevo-usuario-registrate-container"
         onClick={console.log()}
       >
         {`Nuevo usuario? `}
-        <span className="registrate">Registrate</span>.
+        <span className="registrate">Registrate</span>
       </div>
     </div>
   );

@@ -126,3 +126,8 @@
   color: var(--color-firebrick);
   font-family: var(--font-montserrat);
 }
+
+.Link {
+  text-decoration: none; /*quita el subrayado*/
+  color: white; /*cambia el color del texto a blanco*/
+}
