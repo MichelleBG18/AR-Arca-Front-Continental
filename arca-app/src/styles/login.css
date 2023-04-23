@@ -1,3 +1,6 @@
-body {
+component {
+    flex: 1;
+    margin: 16px;
+    padding: 24px;
     background: linear-gradient(347.95deg, #E8A87C 0%, #FFD3A5 100%);
 }
