@@ -1,11 +1,12 @@
 import React from 'react'
 import "../../styles/login.css"
-import LoginForm from '../../components/global/LogInForm'
+import LogInForm from "../../components/"
+import Logo from "../../images/Arca_Continental_logo.png"
 
 function LogIn() {
   return (
-    <div className='scaffold'>
-        <LoginForm/>
+    <div>
+      <img src={Logo}> </img>
     </div>
   )
 }
