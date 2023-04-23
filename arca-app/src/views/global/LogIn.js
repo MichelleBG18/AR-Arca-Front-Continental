@@ -1,10 +1,10 @@
 import React from 'react'
 import "../../styles/login.css"
-import LoginForm from '../../components/global/LoginForm'
+import LoginForm from '../../components/global/LogInForm'
 
 function LogIn() {
   return (
-    <div className='body'>
+    <div className='scaffold'>
         <LoginForm/>
     </div>
   )

@@ -3,10 +3,6 @@ code {
     monospace;
 }
 
-body {
-  font-family: "Raleway", sans-serif;
-}
-
 @media screen and (max-width: 768px) {
   /* Adjust font size and padding for small screens */
   body {
@@ -21,7 +17,7 @@ body {
     height: 100vh;
 
     font-size: 14px;
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     src: url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
     -webkit-font-smoothing: antialiased;

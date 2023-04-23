@@ -1,6 +1,13 @@
-component {
+.scaffold {
     flex: 1;
     margin: 16px;
     padding: 24px;
-    background: linear-gradient(347.95deg, #E8A87C 0%, #FFD3A5 100%);
+    height: 100%;
+    background: white;
+}
+
+.white-container {
+    background-color: white;
+    padding: 24px;
+    width: 100%;
 }

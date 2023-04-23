@@ -6,8 +6,10 @@ function LoginForm() {
 
   
     return (
-      <div className="component">
-        
+      <div className="login-form">
+        <div className="white-container">
+          {/* Content here */}
+        </div>
       </div>
     );
 }
