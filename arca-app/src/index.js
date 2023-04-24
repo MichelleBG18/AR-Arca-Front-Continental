@@ -8,7 +8,7 @@ import styles from "./index.css"
 
 export default function App() {
   return (
-    <div className="appindex">
+    <div className={styles.appindex}>
       <BrowserRouter>
         <Routes>
 
