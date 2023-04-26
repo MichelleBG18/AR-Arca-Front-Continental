@@ -2,7 +2,7 @@ import React from 'react'
 
 function landing() {
   return (
-    <div>landing</div>
+    <div>Chofer</div>
   )
 }
 

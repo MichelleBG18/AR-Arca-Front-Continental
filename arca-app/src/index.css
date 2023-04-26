@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  padding: 0px 16px;
+  background-color: #FFD3A5;
   font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -8,14 +10,10 @@ body {
 code {
   font-family: 'Raleway', sans-serif;
 }
-
+/* 
 .appindex{
-  min-height: 100vh;
-  background-color: #FFD3A5;
-  padding: 0 16px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */

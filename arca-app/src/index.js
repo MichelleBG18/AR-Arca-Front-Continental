@@ -1,8 +1,9 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LogIn from "./views/global/LogIn/LogIn"
-import LandingDesarrollador from "./views/desarrollador/landing"
-import LandingAdmin from "./views/admin/landing"
+import LandingDesarrollador from "./views/desarrollador/landing/landing"
+import LandingAdmin from "./views/admin/landing/landing"
+import LandingChofer from "./views/chofer/landing/landing"
 import ErrorPortal from "./views/global/ErrorPortal"
 import styles from "./index.css"
 
@@ -17,12 +18,13 @@ export default function App() {
             <Route path="*" element={<ErrorPortal />} />
 
           {/* Paginas Admin */}
-          <Route path="/landing-admin" element={<LandingAdmin />} />
+          <Route path="/landing-admin/:id" element={<LandingAdmin />} />
           
           {/* Paginas Desarrollador */}
-          <Route path="/landing-desarrollador" element={<LandingDesarrollador />} />
+          <Route path="/landing-desarrollador/:id" element={<LandingDesarrollador />} />
 
           {/* Paginas Chofer */}
+          <Route path="/landing-chofer/:id" element={<LandingChofer />} />
 
         </Routes>
       </BrowserRouter>

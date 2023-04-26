@@ -1,8 +1,11 @@
+.loginBody{
+    margin: 0px -16px;
+    background: linear-gradient(347.95deg, #E8A87C 0%, #FFD3A5 100%);
+}
+
 .login{
     height: 100vh;
-    width: 100vw;
-
-    background: linear-gradient(347.95deg, #E8A87C 0%, #FFD3A5 100%);
+    width: 100%;
     
     display: flex;
     flex-direction: column;

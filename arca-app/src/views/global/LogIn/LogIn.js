@@ -6,13 +6,16 @@ import LogInForm from "../../../components/global/LogInForm/LogInForm"
 
 function LogIn() {
   return (
-    <div className={styles.login}>
-      <Logo />
-      <div className={styles.title}>
-        Bienvenido
+    <body className={styles.loginBody}>
+      <div className={styles.login}>
+        <Logo />
+        <div className={styles.title}>
+          Bienvenido
+        </div>
+        <LogInForm/>
       </div>
-      <LogInForm/>
-    </div>
+    </body>
+
   )
 }
 
