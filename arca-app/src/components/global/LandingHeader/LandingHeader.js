@@ -8,9 +8,8 @@ function LandingHeader() {
   const id = useParams();
 
   useEffect(() => {
-    // Define the API endpoint URL based on the userId prop
-    console.log(" ------ Id de usuario:", id.id)
 
+    // Define the API endpoint URL based on the userId prop
     const url = `http://localhost:8080/desarrollador/datos/${id.id}`;
     const options = {
       method: "GET",
@@ -34,7 +33,6 @@ function LandingHeader() {
         return response.json();
       })
       .then((data) => {
-        console.log("------ Backend data: ", data);
         setUserName(`${data.nombre} ${data.apellido_paterno}`);
       })
       .catch((err) => {

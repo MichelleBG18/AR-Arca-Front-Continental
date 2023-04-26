@@ -6,7 +6,7 @@ import LogInForm from "../../../components/global/LogInForm/LogInForm"
 
 function LogIn() {
   return (
-    <body className={styles.loginBody}>
+    <div className={styles.loginBody}>
       <div className={styles.login}>
         <Logo />
         <div className={styles.title}>
@@ -14,7 +14,7 @@ function LogIn() {
         </div>
         <LogInForm/>
       </div>
-    </body>
+    </div>
 
   )
 }

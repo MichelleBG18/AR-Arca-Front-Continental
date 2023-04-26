@@ -40,7 +40,6 @@ function LogInForm() {
         return response.json();
       })
       .then((data) => {
-        console.log("------ Backend data: ", data);
         if (data.session.rol === 1) {
           navigate(`/landing-admin/${data.session.id_usuario}`);
         } else if (data.session.rol === 2) {
