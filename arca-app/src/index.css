@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0px 16px;
+  background-color: #FFD3A5;
+  font-family: 'Raleway', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: 'Raleway', sans-serif;
+}
+/* 
+.appindex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
