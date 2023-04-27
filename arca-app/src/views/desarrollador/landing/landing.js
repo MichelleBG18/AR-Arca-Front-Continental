@@ -1,7 +1,7 @@
 import React from 'react'
 import LandingHeader from '../../../components/global/LandingHeader/LandingHeader'
 import RecentRequest from '../../../components/desarrollador/RecentRequest/RecentRequest'
-import NavigationBar from '../../../components/desarrollador/NavigationBar/NavigationBar'
+import NavigationBar from '../../../components/global/NavigationBar/NavigationBar'
 import styles from './landing.module.css'
 function landing() {
   return (

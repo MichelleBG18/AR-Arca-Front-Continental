@@ -41,11 +41,11 @@ function LogInForm() {
       })
       .then((data) => {
         if (data.session.rol === 1) {
-          navigate(`/landing-admin/${data.session.id_usuario}`);
+          navigate(`/admin/landing/${data.session.id_usuario}`);
         } else if (data.session.rol === 2) {
-          navigate(`/landing-chofer/${data.session.id_usuario}`);
+          navigate(`/chofer/landing/${data.session.id_usuario}`);
         } else if (data.session.rol === 3) {
-          navigate(`/landing-desarrollador/${data.session.id_usuario}`);
+          navigate(`/desarrollador/landing/${data.session.id_usuario}`);
         }
       })
       .catch((err) => {

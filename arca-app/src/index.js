@@ -4,7 +4,7 @@ import LogIn from "./views/global/LogIn/LogIn"
 import LandingDesarrollador from "./views/desarrollador/landing/landing"
 import LandingAdmin from "./views/admin/landing/landing"
 import LandingChofer from "./views/chofer/landing/landing"
-import ErrorPortal from "./views/global/ErrorPortal"
+import ErrorPortal from "./views/global/ErrorPortal/ErrorPortal"
 import styles from "./index.css"
 
 export default function App() {
@@ -17,14 +17,14 @@ export default function App() {
           <Route path="/" element={<LogIn />} />
             <Route path="*" element={<ErrorPortal />} />
 
-          {/* Paginas Admin */}
-          <Route path="/landing-admin/:id" element={<LandingAdmin />} />
-          
-          {/* Paginas Desarrollador */}
-          <Route path="/landing-desarrollador/:id" element={<LandingDesarrollador />} />
+          {/* Paginas Admin ID 1*/}
+          <Route path="/admin/landing/:id" element={<LandingAdmin />} />
 
-          {/* Paginas Chofer */}
-          <Route path="/landing-chofer/:id" element={<LandingChofer />} />
+          {/* Paginas Chofer ID 2*/}
+          <Route path="/chofer/landing/:id" element={<LandingChofer />} />
+          
+          {/* Paginas Desarrollador ID 3*/}
+          <Route path="/desarrollador/landing/:id" element={<LandingDesarrollador />} />
 
         </Routes>
       </BrowserRouter>

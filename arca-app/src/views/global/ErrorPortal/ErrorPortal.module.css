@@ -1,0 +1,15 @@
+icon{
+    color: black;
+}
+
+.boxActivo{
+    height: 20px;
+    width: 100%x;
+    background-color: red;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10pt;
+}

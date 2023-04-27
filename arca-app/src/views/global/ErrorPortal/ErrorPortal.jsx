@@ -1,5 +1,5 @@
 import React from 'react'
-import NavigationBar from '../../components/desarrollador/NavigationBar/NavigationBar'
+import NavigationBar from '../../../components/global/NavigationBar/NavigationBar'
 
 function ErrorPortal() {
   return (
