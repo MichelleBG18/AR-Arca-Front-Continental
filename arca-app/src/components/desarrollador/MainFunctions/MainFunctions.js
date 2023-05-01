@@ -1,21 +1,25 @@
-import React from 'react';
+import React from "react";
 import styles from "./MainFunctions.module.css";
 import arPhoneArt from "../../../images/arPhoneArt.svg";
 import crearSolicitudArt from "../../../images/crearSolicitudArt.svg";
 import { useNavigate, useParams, useLocation } from "react-router-dom";
 
 function MainFunctions() {
-  const id  = useParams();
+  const id = useParams();
   const navigate = useNavigate();
   const location = useLocation();
   const previousUrl = location.pathname;
 
   const handleSimulacionClick = () => {
-    navigate(`/desarrollador/abrir-simulador/${id.id}`,{ state: { previousUrl: previousUrl }});
+    navigate(`/desarrollador/abrir-simulador/${id.id}`, {
+      state: { previousUrl: previousUrl },
+    });
   };
 
   const handleCrearSolicitudClick = () => {
-    navigate(`/desarrollador/crear-solicitud/${id.id}`,{ state: { previousUrl: previousUrl }});
+    navigate(`/desarrollador/crear-solicitud/${id.id}`, {
+      state: { previousUrl: previousUrl },
+    });
   };
 
   return (
