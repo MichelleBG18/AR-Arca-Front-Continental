@@ -1,0 +1,29 @@
+.SolicitudesRevisarBox {
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+
+    /* height: 72px; */
+    width: 100%;
+
+    box-shadow: 5px 5px 11px rgba(26, 26, 51, 0.1);
+    border-radius: 10pt;
+    background-color: #fff;
+}
+
+.TituloSolicitudesRevisarBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.TituloSolicitudesRevisar {
+    font-weight: 650;
+    font-size: 24px;
+}
+
+.EjemploCard {
+
+}
