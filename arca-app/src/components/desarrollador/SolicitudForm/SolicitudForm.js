@@ -1,12 +1,17 @@
 import React, { useState, useEffect } from "react";
 import styles from "./SolicitudForm.module.css";
-import NavButton from "../../../components/desarrollador/NavButton/NavButton";
 import UploadImageIcon from "../../../images/uploadImageIcon.svg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAdd } from "@fortawesome/free-solid-svg-icons";
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate, useLocation } from 'react-router-dom';
 
 function SolicitudForm() {
+  const navigate = useNavigate();
+  const id = useParams();
+  
+  const location = useLocation();
+  const previousUrl = location.pathname;
+
   const [selectedFile, setSelectedFile] = useState(null);
   const [supervisors, setSupervisors] = useState([]);
   const [stores, setStores] = useState([]);
@@ -17,12 +22,10 @@ function SolicitudForm() {
 
   const [isFormComplete, setIsFormComplete] = useState(false);
 
-  const id = useParams();
-
   const dropDownOptions = {
     method: "GET",
     mode: "cors",
-    headers: { "Content-Type": "application/json" },
+    headers: { "Content-Type": "application/json" }
   };
 
   useEffect(() => {
@@ -113,9 +116,16 @@ function SolicitudForm() {
       }
     // Make endpoint call with form data
     fetch("http://localhost:8080/desarrollador/crearSolicitud", formOptions)
-      .then((response) => response.json())
+      .then((response) => {
+        response.json()
+        if (response.status === 200) {
+          navigate(`/desarrollador/catalogo-refrigeradores/${id.id}`,{
+            state: { previousUrl: previousUrl },
+          });
+        }
+      })
       .then((data) => {
-        // Handle response data
+
       })
       .catch((error) => console.log(error));
 

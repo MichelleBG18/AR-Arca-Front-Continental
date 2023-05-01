@@ -6,6 +6,7 @@ import LandingAdmin from "./views/admin/landing/landing"
 import LandingChofer from "./views/chofer/landing/landing"
 import ErrorPortal from "./views/global/ErrorPortal/ErrorPortal"
 import CrearSolicitud from "./views/desarrollador/CrearSolicitud/CrearSolicitud";
+import CatalogoRefrigerador from "./views/desarrollador/CatalogoRefrigerador/CatalogoRefrigerador";
 import styles from "./index.css"
 
 export default function App() {
@@ -30,6 +31,7 @@ export default function App() {
           {/* Paginas Desarrollador ROL-ID 3*/}
           <Route path="/desarrollador/landing/:id" element={<LandingDesarrollador />} />
             <Route path="/desarrollador/crear-solicitud/:id" element={<CrearSolicitud />} />
+            <Route path="/desarrollador/catalogo-refrigeradores/:id" element={<CatalogoRefrigerador />} />
 
         </Routes>
       </BrowserRouter>
@@ -37,35 +39,6 @@ export default function App() {
     
   );
 }
-
-// Component for admin routes
-function AdminRoutes() {
-  return (
-    <>
-      <Route path="/admin/landing/:id" element={<LandingAdmin />} />
-    </>
-  );
-}
-
-// Component for chofer routes
-function ChoferRoutes() {
-  return (
-    <>
-      <Route path="/chofer/landing/:id" element={<LandingChofer />} />
-    </>
-  );
-}
-
-// Component for desarrollador routes
-function DesarrolladorRoutes() {
-  return (
-    <>
-      <Route path="/desarrollador/landing/:id" element={<LandingDesarrollador />} />
-      <Route path="/desarrollador/crear-solicitud/:id" element={<CrearSolicitud />} />
-    </>
-  );
-}
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render( <App /> );
