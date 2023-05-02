@@ -1,9 +1,9 @@
 import React from 'react'
-// import styles from './RecentRequest.module.css'
+import styles from './RecentRequest.module.css'
 
 function RecentRequest() {
   return (
-    <div>RecentRequest</div>
+    <div className={styles.recentRequest}>RecentRequest</div>
   )
 }
 

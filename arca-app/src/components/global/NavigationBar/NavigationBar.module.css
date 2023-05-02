@@ -1,0 +1,84 @@
+.navBarBox {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 64px;
+    width: 100%;
+
+    box-shadow: 5px 5px 11px rgba(26, 26, 51, 0.1);
+    border-radius: 32px;    
+    background-color: #fff;
+
+    padding: 8px 0px;
+    margin-bottom: 18px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0px 20px;
+  }
+  
+  nav li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  nav a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 14px;
+    height: 100%;
+  }
+  
+  .iconActive {
+    font-size: 24px;
+    color: white;
+  }
+
+  .iconPending{
+    font-size: 24px;
+    color: black;
+    
+  }
+  .boxActive{
+    height: 100%;
+    padding: 0px 28px;
+    background: #B81631;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 32pt;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxPending{
+  height: 100%;
+  padding: 0px 28px;
+  background: white;
+  border-radius: 32pt;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
