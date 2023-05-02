@@ -1,8 +1,52 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import styles from './DiseñoCardSolicitud.module.css'
 import DiseñoCardRefri from './DiseñoCardRefri'
+import { useParams } from 'react-router-dom';
 
 function DiseñoCardSolicitud(props) {
+    const[InfoRefri, setInfoRefri] = useState([]);
+    const id = useParams();
+
+    useEffect(() => {
+
+        // Define the API endpoint URL based on the userId prop
+        const url = `http://localhost:3001/admin/refrigeradores/solicitud/${id.id}/${encodeURIComponent(props.id_solicitud)}`;
+        
+        const options = {
+          method: "GET",
+          mode: "cors",
+          headers: { "Content-Type": "application/json" },
+        };
+    
+      // Make a fetch request to the endpoint
+      fetch(url, options)
+      .then(response => {
+        switch (response.status) {
+          case 404:
+            throw new Error("User not found");
+          case 401:
+            throw new Error("Invalid Id");
+          case 400:
+            throw new Error("Something went wrong")
+          default:
+            break;
+        }
+        return response.json();
+      })
+      .then (data => {
+        if (Array.isArray(data)) { // Verificar si la respuesta es un array
+          setInfoRefri(data);
+          console.log(data)
+        } else {
+          setInfoRefri([data]); //Si no, se pone dentro de un array
+          console.log(data)
+        }
+    })
+      .catch((err) => {
+        console.error("Error logging in: ", err);
+      });
+    }, [id, props.id_solicitud]); // Specify the userId as a dependency
+
   return (
     <div className={styles.PaddingCard}>
         <div className={styles.CardGeneral}>
@@ -29,8 +73,12 @@ function DiseñoCardSolicitud(props) {
                 </div>
             </div> {/*Fin Informacion usuario y solicitud e imagen*/}
             <div className={styles.Cards_Refrigerador}>
-                <DiseñoCardRefri modelo="Modelo estático" codigo_serie="#0101234567890128TEC-IT" cantidad="1"/>
-                <DiseñoCardRefri modelo="Modelo estático" codigo_serie="#0101234567890128TEC-IT" cantidad="1"/>
+                {InfoRefri && 
+                InfoRefri.map((info) => (
+                <div key={info.codigo_serie}>
+                    <DiseñoCardRefri modelo={info.modelo} codigo_serie={info.codigo_serie} cantidad={info.cantidad}/>
+                </div>
+                ))}
             </div>
         </div> 
     </div>
