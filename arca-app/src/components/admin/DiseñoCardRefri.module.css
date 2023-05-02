@@ -1,0 +1,49 @@
+.DesignCardRefri {
+    display: flex;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+}
+
+.ImagenRefri {
+    margin-right: 28px;
+    height: 100%;
+    flex: 0 0 auto;
+}
+
+.InformacionRefri {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.InfoModeloSerie {
+    justify-content: center;
+    align-items: center;
+}
+
+.Modelo {
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0px;
+}
+
+.CodigoSerie {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    margin: 2px;
+}
+
+.InfoCantidad {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.Cantidad {
+    font-weight: 700;
+    font-size: 12px;
+    margin: 0px;
+}

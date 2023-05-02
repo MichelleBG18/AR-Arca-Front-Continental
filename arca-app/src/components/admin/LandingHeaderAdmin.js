@@ -42,7 +42,7 @@ function LandingHeaderAdmin() {
   return (
     <div className={styles.headerBox}>
       <div className={styles.textoBienvenida}>
-        <span className={styles.saludo}>Bienvenido</span>
+        <span className={styles.saludo}>Administrador</span>
         <span className={styles.nombreUsuario}>{userName}</span>
       </div>
       <img  src={require('../../images/Arca_Continental_logo.png')} alt="/" className={styles.logo}/>
