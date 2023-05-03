@@ -7,13 +7,14 @@ function LogInForm() {
   const [clientPassword, setclientPassword] = useState("");
   const navigate = useNavigate();
 
+  
   const handleSubmit = async (event) => {
     event.preventDefault();
     console.log(`
       ----- Login Triggered!
       \nUsername: ${email}, clientPassword: ${clientPassword}`);
 
-    const url = "http://localhost:3001/users/logIn";
+    const url = "http://localhost:8080/users/logIn";
     const data = {
       email: email,
       clientPassword: clientPassword,
@@ -40,12 +41,15 @@ function LogInForm() {
         return response.json();
       })
       .then((data) => {
+
+        // localStorage.setItem()
+        
         if (data.session.rol === 1) {
-          navigate(`/landing-admin/${data.session.id_usuario}`);
+          navigate(`/admin/landing/${data.session.id_usuario}`);
         } else if (data.session.rol === 2) {
-          navigate(`/landing-chofer/${data.session.id_usuario}`);
+          navigate(`/chofer/landing/${data.session.id_usuario}`);
         } else if (data.session.rol === 3) {
-          navigate(`/landing-desarrollador/${data.session.id_usuario}`);
+          navigate(`/desarrollador/landing/${data.session.id_usuario}`);
         }
       })
       .catch((err) => {
@@ -57,7 +61,7 @@ function LogInForm() {
     <div className={styles.loginform}>
       <form className={styles.form} onSubmit={handleSubmit}>
         <div className={styles.inputTitle}>
-          <p>Correo electronico </p>
+          <p className={styles.inputHeader}>Correo electronico </p>
         </div>
         <input
           className={styles.inputField}
@@ -68,7 +72,7 @@ function LogInForm() {
         />
 
         <div className={styles.inputTitle}>
-          <p>Contraseña </p>
+          <p className={styles.inputHeader}>Contraseña </p>
         </div>
         <input
           className={styles.inputField}

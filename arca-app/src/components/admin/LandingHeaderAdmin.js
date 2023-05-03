@@ -47,6 +47,7 @@ function LandingHeaderAdmin() {
       </div>
       <img  src={require('../../images/Arca_Continental_logo.png')} alt="/" className={styles.logo}/>
     </div>
+    
   )
 }
 

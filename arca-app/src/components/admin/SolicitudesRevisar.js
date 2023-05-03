@@ -42,7 +42,7 @@ function SolicitudesRevisar() {
   .catch((err) => {
     console.error("Error logging in: ", err);
   });
-}, []); // Specify the userId as a dependency
+}, [id]); // Specify the userId as a dependency
 
   return (
     <div className={styles.SolicitudesRevisarBox}>

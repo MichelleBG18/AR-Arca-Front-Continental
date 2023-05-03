@@ -3,8 +3,9 @@
     justify-content: center;
     align-items: center;
 
-    /* height: 72px; */
+    height: 600px;
     width: 100%;
+    overflow-y: auto; /* Desplazamiento vertical (scroll) */
 
     box-shadow: 5px 5px 11px rgba(26, 26, 51, 0.1);
     border-radius: 10pt;

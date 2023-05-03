@@ -4,10 +4,14 @@ import LogIn from "./views/global/LogIn/LogIn"
 import LandingDesarrollador from "./views/desarrollador/landing/landing"
 import LandingAdmin from "./views/admin/landing/landing"
 import LandingChofer from "./views/chofer/landing/landing"
-import ErrorPortal from "./views/global/ErrorPortal"
+import ErrorPortal from "./views/global/ErrorPortal/ErrorPortal"
+import CrearSolicitud from "./views/desarrollador/CrearSolicitud/CrearSolicitud";
+import CatalogoRefrigerador from "./views/desarrollador/CatalogoRefrigerador/CatalogoRefrigerador";
 import styles from "./index.css"
+import AceptacionSolicitud from "./views/admin/landing/AceptacionSolicitud";
 
 export default function App() {
+
   return (
     <div className={styles.appindex}>
       <BrowserRouter>
@@ -16,15 +20,20 @@ export default function App() {
           {/* Paginas Globales */}
           <Route path="/" element={<LogIn />} />
             <Route path="*" element={<ErrorPortal />} />
+            <Route path="/clientes/:id" element={<ErrorPortal />} />
+            <Route path="/solicitudes/:id" element={<ErrorPortal />} />
 
-          {/* Paginas Admin */}
-          <Route path="/landing-admin/:id" element={<LandingAdmin />} />
+          {/* Paginas Admin ROL-ID 1*/}
+          <Route path="/admin/landing/:id" element={<LandingAdmin />} />
+          <Route path="/admin/solicitud/:id" element={<AceptacionSolicitud />}/>
+
+          {/* Paginas Chofer ROL-ID 2*/}
+          <Route path="/chofer/landing/:id" element={<LandingChofer />} />
           
-          {/* Paginas Desarrollador */}
-          <Route path="/landing-desarrollador/:id" element={<LandingDesarrollador />} />
-
-          {/* Paginas Chofer */}
-          <Route path="/landing-chofer/:id" element={<LandingChofer />} />
+          {/* Paginas Desarrollador ROL-ID 3*/}
+          <Route path="/desarrollador/landing/:id" element={<LandingDesarrollador />} />
+            <Route path="/desarrollador/crear-solicitud/:id" element={<CrearSolicitud />} />
+            <Route path="/desarrollador/catalogo-refrigeradores/:id" element={<CatalogoRefrigerador />} />
 
         </Routes>
       </BrowserRouter>
