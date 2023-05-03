@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './landingchofer.module.css'
-import LandingHeaderChofer from '../../../components/chofer/LandingHeaderChofer'
+import LandingHeaderChofer from '../../../components/chofer/Header/LandingHeaderChofer'
 
 function landing() {
   return (
@@ -9,7 +9,6 @@ function landing() {
     < LandingHeaderChofer />
     
     {/* Lista de Solicitudes */}
-    
     {/* <ListadeSolicitudes /> */}
 
     {/* Navigation Bar */}
