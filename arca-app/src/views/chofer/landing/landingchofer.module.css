@@ -7,3 +7,8 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.PaddingChofer{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}

@@ -1,0 +1,30 @@
+.CardGeneral {
+    box-sizing: border-box;
+    width: 100%;
+    box-shadow: 5px 5px 11px rgba(26, 26, 51, 0.1);
+    border-radius: 10pt;
+    background-color: #B81631;
+    color:whitesmoke;
+}
+
+.SpanKPI {
+    
+} 
+
+.ContenedorInfo {
+    width: 100%;
+}
+
+.SolicitudesAprobadas {
+    margin: 0px;
+    padding-left: 24px;
+    font-weight: 600;
+    padding-top: 5px;
+}
+
+.SolicitudesMeta {
+    margin: 0px;
+    padding-left: 24px;
+    font-weight: 600;
+    padding-bottom: 5px;
+}

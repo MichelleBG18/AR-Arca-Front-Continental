@@ -1,16 +1,16 @@
 import React, {useState, useEffect} from 'react'
 import styles from './DiseñoCardSolicitud.module.css'
-import DiseñoCardRefri from './DiseñoCardRefri'
 import { useParams } from 'react-router-dom';
+import DiseñoCardRefri from '../admin/DiseñoCardRefri';
 
-function DiseñoCardSolicitud(props) {
+function DiseñoCardSolicitud2(props) {
     const[InfoRefri, setInfoRefri] = useState([]);
     const id = useParams();
 
     useEffect(() => {
 
         // Define the API endpoint URL based on the userId prop
-        const url = `http://localhost:3001/admin/refrigeradores/solicitud/${id.id}/${encodeURIComponent(props.id_solicitud)}`;
+        const url = `http://localhost:3001/admin/refri/chof/${id.id}/${encodeURIComponent(props.id_solicitud)}`;
         
         const options = {
           method: "GET",
@@ -47,6 +47,7 @@ function DiseñoCardSolicitud(props) {
       });
     }, [id, props.id_solicitud]); // Specify the userId as a dependency
 
+    console.log(InfoRefri)
   return (
     <div className={styles.PaddingCard}>
         <div className={styles.CardGeneral}>
@@ -88,4 +89,4 @@ function DiseñoCardSolicitud(props) {
   )
 }
 
-export default DiseñoCardSolicitud
+export default DiseñoCardSolicitud2

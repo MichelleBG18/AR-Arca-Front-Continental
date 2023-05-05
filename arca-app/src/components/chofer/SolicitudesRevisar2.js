@@ -1,16 +1,16 @@
 import React, {useState, useEffect} from 'react'
 import styles from './SolicitudesRevisar.module.css'
-import DiseñoCardSolicitud from './DiseñoCardSolicitud'
+import DiseñoCardSolicitud from './DiseñoCardSolicitud2'
 import { useParams } from 'react-router-dom';
 
-function SolicitudesRevisar() {
+function SolicitudesRevisar2() {
   const [InfoSolicitud, setInfoSolicitud] = useState([]);
   const id = useParams();
 
   useEffect(() => {
 
     // Define the API endpoint URL based on the userId prop
-    const url = `http://localhost:3001/admin/solicitudes/${id.id}`;
+    const url = `http://localhost:3001/admin/soli/${id.id}`;
     const options = {
       method: "GET",
       mode: "cors",
@@ -63,4 +63,4 @@ function SolicitudesRevisar() {
   );
 }
 
-export default SolicitudesRevisar
+export default SolicitudesRevisar2

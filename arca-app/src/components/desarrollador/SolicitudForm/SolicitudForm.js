@@ -30,7 +30,7 @@ function SolicitudForm() {
 
   useEffect(() => {
     // Llamada de endpoint para supervisores
-    fetch("http://localhost:8080/desarrollador/datosSupervisores", dropDownOptions)
+    fetch("http://localhost:3001/desarrollador/datosSupervisores", dropDownOptions)
       .then((response) => {
         return response.json();
       })
@@ -40,7 +40,7 @@ function SolicitudForm() {
       .catch((error) => console.log(error));
 
     // Llamada de endpoint para negocios
-    fetch("http://localhost:8080/desarrollador/datosNegocios", dropDownOptions)
+    fetch("http://localhost:3001/desarrollador/datosNegocios", dropDownOptions)
       .then((response) => response.json())
       .then((data) => {
         // Guardamos el array completo en la variable
@@ -115,7 +115,7 @@ function SolicitudForm() {
         return;
       }
     // Make endpoint call with form data
-    fetch("http://localhost:8080/desarrollador/crearSolicitud", formOptions)
+    fetch("http://localhost:3001/desarrollador/crearSolicitud", formOptions)
       .then((response) => {
         response.json()
         if (response.status === 200) {

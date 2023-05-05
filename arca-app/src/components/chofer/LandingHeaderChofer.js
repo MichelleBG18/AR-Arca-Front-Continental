@@ -10,7 +10,7 @@ function LandingHeaderChofer() {
   useEffect(() => {
 
     // Define the API endpoint URL based on the userId prop
-    const url = `http://localhost:3001/desarrollador/datos/${id.id}`;
+    const url = `http://localhost:3001/admin/headerchofer/${id.id}`;
     const options = {
       method: "GET",
       mode: "cors",
@@ -38,16 +38,17 @@ function LandingHeaderChofer() {
       .catch((err) => {
         console.error("Error logging in: ", err);
       });
-  }); // Specify the userId as a dependency
+  }, [id]); // Specify the userId as a dependency
 
   return (
     <div className={styles.headerBox}>
       <div className={styles.textoBienvenida}>
-        <span className={styles.saludo}>Bienvenido</span>
+        <span className={styles.saludo}>Chofer</span>
         <span className={styles.nombreUsuario}>{userName}</span>
       </div>
-      <img  src={Logoimg} alt="/" className={styles.logo}/>
+      <img  src={require('../../images/Arca_Continental_logo.png')} alt="/" className={styles.logo}/>
     </div>
+    
   )
 }
 

@@ -14,7 +14,7 @@ function LogInForm() {
       ----- Login Triggered!
       \nUsername: ${email}, clientPassword: ${clientPassword}`);
 
-    const url = "http://localhost:8080/users/logIn";
+    const url = "http://localhost:3001/users/logIn";
     const data = {
       email: email,
       clientPassword: clientPassword,
