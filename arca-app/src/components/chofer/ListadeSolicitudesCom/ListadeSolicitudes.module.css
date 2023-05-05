@@ -34,3 +34,15 @@
     align-items: center;
 
 }
+
+.tiedanamebox{
+    display: flex;
+
+
+    box-shadow: 5px 5px 11px rgba(26, 26, 51, 0.1);
+    border-radius: 20pt;
+    background-color: #fff;
+
+
+
+}
