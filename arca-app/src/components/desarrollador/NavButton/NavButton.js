@@ -1,23 +1,18 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import styles from "./NavButton.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAdd } from "@fortawesome/free-solid-svg-icons";
+import { faClipboardList } from "@fortawesome/free-solid-svg-icons";
 
-function NavButton() {
-  const navigate = useNavigate();
-  const handleClick = () =>
-   {
-    navigate(`/desarrollador/abrir-simulador/`)
-  };
+function NavButton(props) {
+  
   return (
     <div className={styles.navButtonBox}>
       <div
         className={styles.navButton}
-        onClick={handleClick  }
+        onClick={props.handleClick}
       >
-         <FontAwesomeIcon icon={faAdd} className={styles.iconActive} />
-         <p className={styles.buttonCaption}>Agregar</p>
+         <FontAwesomeIcon icon={faClipboardList} className={styles.iconActive} />
+         <p className={styles.buttonCaption}>{props.buttonCaption}</p>
       </div>
       {/* <hr className={styles.solid}></hr> */}
     </div>

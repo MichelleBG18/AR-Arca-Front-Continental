@@ -1,15 +1,15 @@
-import React from 'react'
-import styles from "./CatalogoRefrigerador.module.css"
-import GoBackCTA from "../../../components/global/GoBackCTA/GoBackCTA";
-import CardRefrigerador from '../../../components/desarrollador/CardRefrigerador/CardRefrigerador';
+import React from "react";
+import styles from "./CatalogoRefrigerador.module.css";
+import GoBackCTA from "../../../components/global/GoBackCTA/GoBackCTA"
+import RefrigeradoresCheckList from "../../../components/desarrollador/RefrigeradoresCheckList/RefrigeradoresCheckList";
 
-const CatalogoRefrigerador = (props) => {
+const CatalogoRefrigerador = () =>{
+  
   return (
     <div className={styles.catalogoRefrigerador}>
-        <GoBackCTA/>
-        <CardRefrigerador/>
+      <GoBackCTA />
+      <RefrigeradoresCheckList/>
     </div>
-  )
-}
-
-export default CatalogoRefrigerador
+  );
+};
+export default CatalogoRefrigerador;

@@ -5,6 +5,7 @@ import backArrow from "../../../images/backArrow.svg";
 function GoBackCTA() {
   const location = useLocation();
   const previousUrl = location.state.previousUrl;
+  console.log("PREVIOUS URL GO BACK: ", previousUrl)
 
   return (
     <div className={styles.goBackCTABox}>

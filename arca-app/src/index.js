@@ -7,6 +7,7 @@ import LandingChofer from "./views/chofer/landing/landing"
 import ErrorPortal from "./views/global/ErrorPortal/ErrorPortal"
 import CrearSolicitud from "./views/desarrollador/CrearSolicitud/CrearSolicitud";
 import CatalogoRefrigerador from "./views/desarrollador/CatalogoRefrigerador/CatalogoRefrigerador";
+import CheckListRefrigerador from "./views/desarrollador/CheckListRefrigerador/CheckListRefrigerador";
 import styles from "./index.css"
 
 export default function App() {
@@ -32,6 +33,7 @@ export default function App() {
           <Route path="/desarrollador/landing/:id" element={<LandingDesarrollador />} />
             <Route path="/desarrollador/crear-solicitud/:id" element={<CrearSolicitud />} />
             <Route path="/desarrollador/catalogo-refrigeradores/:id" element={<CatalogoRefrigerador />} />
+            <Route path="/desarrollador/checklist-refrigeradores/:id" element={< CheckListRefrigerador/>} />
 
         </Routes>
       </BrowserRouter>
