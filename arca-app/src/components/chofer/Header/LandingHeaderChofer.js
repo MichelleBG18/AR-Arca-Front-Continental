@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styles from './LandingHeaderChofer.module.css'
-import Logoimg from "../../images/Arca_Continental_logo.png"
+import Logoimg from "../../../images/Arca_Continental_logo.png"
 import { useParams } from 'react-router-dom';
 
 function LandingHeaderChofer() {

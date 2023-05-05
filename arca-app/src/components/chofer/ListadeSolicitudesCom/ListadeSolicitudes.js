@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react'
-import styles from './SolicitudesRevisar.module.css'
-import DiseñoCardSolicitud from './DiseñoCardSolicitud'
+import styles from './ListadeSolicitudes.module.css'
+import {DividerArca} from "../../../images/dividerArca.png"
+import DiseñoCardLista from './DiseñoCardRefriLista';
+import dividerArca from '../../../images/dividerArca.png'
 import { useParams } from 'react-router-dom';
 
 function ListadeSolicitudes() {
@@ -43,20 +45,24 @@ function ListadeSolicitudes() {
     console.error("Error logging in: ", err);
   });
 }, [id]); // Specify the userId as a dependency
+  console.log(InfoSolicitud)
 
   return (
-    <div className={styles.SolicitudesRevisarBox}>
-        <div className={styles.TituloSolicitudesRevisarBox}>
-            <span className={styles.TituloSolicitudesRevisar}>Solicitudes Por Revisar</span>
+    <div className={styles.ListadeSolicitudesBox }>
+      <div className={styles.TituloListadeSolicitudes }>
+          <span className={styles.TituloListadeSolicitudes}>Lista de Solicitudes</span>
+      </div>
+      <img src={dividerArca}></img>
+      <div className={styles.EjemploCard}>
         </div>
-        <div className={styles.EjemploCard}>
-          {InfoSolicitud && 
-            InfoSolicitud.map((info) => (
-              <div key={info.id_solicitud}>
-                <DiseñoCardSolicitud nombre_tienda={info.nombre_tienda} colonia={info.colonia} calle={info.calle} num_externo={info.num_externo} nombre={info.nombre} id_solicitud={info.id_solicitud} fecha_generada={info.fecha_generada}/>
-              </div>
-            ))}
+        <div className={styles.tiedanamebox}>
+          <div className={styles.Titulotiendaname}>
+            <span className={styles.Titulotiendaname}>Abarrotes la central</span>
+          </div>
+        
+          Hola
         </div>
+
     </div>
   );
 }
