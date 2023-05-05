@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "./SolicitudForm.module.css";
 import UploadImageIcon from "../../../images/uploadImageIcon.svg"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAdd } from "@fortawesome/free-solid-svg-icons";
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
 
 function SolicitudForm() {
@@ -22,15 +20,18 @@ function SolicitudForm() {
 
   const [isFormComplete, setIsFormComplete] = useState(false);
 
-  const dropDownOptions = {
-    method: "GET",
-    mode: "cors",
-    headers: { "Content-Type": "application/json" }
-  };
+
 
   useEffect(() => {
+
+    const dropDownOptions = {
+      method: "GET",
+      mode: "cors",
+      headers: { "Content-Type": "application/json" }
+    };
+
     // Llamada de endpoint para supervisores
-    fetch("http://localhost:3001/desarrollador/datosSupervisores", dropDownOptions)
+    fetch("http://localhost:8080/desarrollador/datosSupervisores", dropDownOptions)
       .then((response) => {
         return response.json();
       })
@@ -40,7 +41,7 @@ function SolicitudForm() {
       .catch((error) => console.log(error));
 
     // Llamada de endpoint para negocios
-    fetch("http://localhost:3001/desarrollador/datosNegocios", dropDownOptions)
+    fetch("http://localhost:8080/desarrollador/datosNegocios", dropDownOptions)
       .then((response) => response.json())
       .then((data) => {
         // Guardamos el array completo en la variable
@@ -60,13 +61,11 @@ function SolicitudForm() {
 
   // Seleccion de supervisor
   const handleSupervisorChange = (event) => {
-    console.log(" ----- CAMBIO DE SUPERVISOR: ", event.target.value);
     setSelectedSupervisor(event.target.value);
 
   };
   // Seleccion de tienda
   const handleStoreChange = (event) => {
-    console.log(" ----- CAMBIO DE NEGOCIO: ", event.target.value);
     setSelectedStore(event.target.value);
   };
   // Se proporciona una imagen
@@ -115,17 +114,18 @@ function SolicitudForm() {
         return;
       }
     // Make endpoint call with form data
-    fetch("http://localhost:3001/desarrollador/crearSolicitud", formOptions)
+    fetch("http://localhost:8080/desarrollador/crearSolicitud", formOptions)
       .then((response) => {
-        response.json()
-        if (response.status === 200) {
-          navigate(`/desarrollador/catalogo-refrigeradores/${id.id}`,{
+        return response.json();
+      })
+      .then((data) => {
+        if(data.success){
+          console.log("RESPONSE DATA: ", data)
+          navigate(`/desarrollador/catalogo-refrigeradores/${data.id_solicitud}`,{
             state: { previousUrl: previousUrl },
           });
         }
-      })
-      .then((data) => {
-
+        
       })
       .catch((error) => console.log(error));
 
@@ -199,8 +199,7 @@ function SolicitudForm() {
       </form>
       <div className={styles.navButtonBox}>
         <div className={styles.navButton} onClick={handleSubmit} disabled={!isFormComplete}>
-          <FontAwesomeIcon icon={faAdd} className={styles.iconActive} />
-          <p className={styles.buttonCaption}>Agregar</p>
+          <p className={styles.buttonCaption}>Continuar</p>
         </div>
       </div>
     </div>

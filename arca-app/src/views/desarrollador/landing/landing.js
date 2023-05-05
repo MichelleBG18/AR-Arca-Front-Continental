@@ -4,6 +4,7 @@ import RecentRequest from '../../../components/desarrollador/RecentRequest/Recen
 import NavigationBar from '../../../components/global/NavigationBar/NavigationBar'
 import MainFunctions from '../../../components/desarrollador/MainFunctions/MainFunctions'
 import styles from './landing.module.css'
+
 function landing() {
   return (
     <div className={styles.landing}>

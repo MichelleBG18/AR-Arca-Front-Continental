@@ -7,18 +7,19 @@ import { useNavigate, useParams, useLocation } from "react-router-dom";
 function MainFunctions() {
   const id = useParams();
   const navigate = useNavigate();
+
   const location = useLocation();
-  const previousUrl = location.pathname;
+  const currentUrl = location.pathname;
 
   const handleSimulacionClick = () => {
     navigate(`/desarrollador/abrir-simulador/${id.id}`, {
-      state: { previousUrl: previousUrl },
+      state: { previousUrl: currentUrl },
     });
   };
 
   const handleCrearSolicitudClick = () => {
     navigate(`/desarrollador/crear-solicitud/${id.id}`, {
-      state: { previousUrl: previousUrl },
+      state: { previousUrl: currentUrl },
     });
   };
 

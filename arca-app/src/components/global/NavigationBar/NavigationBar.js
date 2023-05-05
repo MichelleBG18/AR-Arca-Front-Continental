@@ -14,7 +14,7 @@ function NavigationBar() {
   useEffect(() => {
 
     // Define the API endpoint URL based on the userId prop
-    const url = `http://localhost:3001/users/user/${id.id}`;
+    const url = `http://localhost:8080/users/user/${id.id}`;
     const options = {
       method: "GET",
       mode: "cors",
