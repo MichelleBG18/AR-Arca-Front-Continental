@@ -1,8 +1,14 @@
 .landing{
     height: 100vh;
     width: 100%;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+.PaddingChofer{
+    padding-top: 24px;
+    padding-bottom: 24px;
 }

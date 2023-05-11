@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import styles from './LandingHeaderAdmin.module.css'
+import styles from './LandingHeaderChofer.module.css'
+import Logoimg from "../../images/Arca_Continental_logo.png"
 import { useParams } from 'react-router-dom';
 
-function LandingHeaderAdmin() {
+function LandingHeaderChofer() {
   const [userName, setUserName] = useState('');
   const id = useParams();
 
   useEffect(() => {
 
     // Define the API endpoint URL based on the userId prop
-    const url = `http://localhost:3001/admin/datos/${id.id}`;
+    const url = `http://localhost:3001/admin/headerchofer/${id.id}`;
     const options = {
       method: "GET",
       mode: "cors",
@@ -37,12 +38,12 @@ function LandingHeaderAdmin() {
       .catch((err) => {
         console.error("Error logging in: ", err);
       });
-  }); // Specify the userId as a dependency
+  }, [id]); // Specify the userId as a dependency
 
   return (
     <div className={styles.headerBox}>
       <div className={styles.textoBienvenida}>
-        <span className={styles.saludo}>Administrador</span>
+        <span className={styles.saludo}>Chofer</span>
         <span className={styles.nombreUsuario}>{userName}</span>
       </div>
       <img  src={require('../../images/Arca_Continental_logo.png')} alt="/" className={styles.logo}/>
@@ -51,4 +52,4 @@ function LandingHeaderAdmin() {
   )
 }
 
-export default LandingHeaderAdmin;
+export default LandingHeaderChofer;

@@ -9,6 +9,8 @@ import CrearSolicitud from "./views/desarrollador/CrearSolicitud/CrearSolicitud"
 import CatalogoRefrigerador from "./views/desarrollador/CatalogoRefrigerador/CatalogoRefrigerador";
 import CheckListRefrigerador from "./views/desarrollador/CheckListRefrigerador/CheckListRefrigerador";
 import styles from "./index.css"
+import AceptacionSolicitud from "./views/admin/landing/AceptacionSolicitud";
+import Instalado from "./components/chofer/Instalado";
 
 export default function App() {
 
